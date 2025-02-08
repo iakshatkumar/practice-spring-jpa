@@ -1,6 +1,7 @@
 package com.broadfaster.jpa.repository;
 
 import com.broadfaster.jpa.entity.Course;
+import com.broadfaster.jpa.entity.Student;
 import com.broadfaster.jpa.entity.Teacher;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -83,5 +84,34 @@ class CourseRepositoryTest {
 //        we will get only courses records which have D in their title
         List<Course> courses = courseRepository.findByTitleContaining("D", firstPageTenRecords).getContent();
         System.out.println("courses = " + courses);
+    }
+
+//    Test for many to many mapping
+
+    @Test
+    public void saveCourseWithStudentAndTeacher() {
+
+        Teacher teacher = Teacher.builder()
+                .firstName("Hitesh")
+                .lastName("Chaudhary")
+                .build();
+
+        Student student = Student.builder()
+                .firstName("Akshat")
+                .lastName("kumar")
+                .emailId("broadfaster@gmail.com")
+                .build();
+
+        Course course = Course.builder()
+                .title("AI")
+                .credit(220)
+                .teacher(teacher)
+                .build();
+
+//        adding student into the course object that we have created using the utility method not the setter method
+        course.addStudent(student);
+
+        courseRepository.save(course);
+
     }
 }
