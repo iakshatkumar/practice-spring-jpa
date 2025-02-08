@@ -28,7 +28,8 @@ public class CourseMaterial {
 //    Course material has to have to exist - and it is a one to  one mapping
     @OneToOne(
             cascade = CascadeType.ALL,
-            fetch = FetchType.LAZY
+            fetch = FetchType.LAZY,
+            optional = false
     )
     @JoinColumn(
             name = "course_id",
