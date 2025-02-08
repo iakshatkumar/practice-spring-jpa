@@ -1,20 +1,20 @@
 JPA Topics Covered -
 
-Connecting Springboot App with DB 
-Mapping Entities with DB
-Different JPA Annotations
-Understanding Repositories and their methods
-@Embeddable and @Embedded (used for parent child relationship)
-Creating JPA Repositories & methods
-@Query Annotation
-Native Queries
-Query Named Params //@Param() 
-@Transactional and @Modifying Annotation
-JPA One-To-One Relationship
-Cascade Types
-Fetch Types
-Uni & Bi directional relationship
-JPA One-To-Many Relationship
-JPA Many-To-One Relationship
-Paging and Sorting
-JPA Many-To-Many Relationship
+1.Connecting Springboot App with DB 
+2.Mapping Entities with DB 
+3.Different JPA Annotations 
+4.Understanding Repositories and their methods 
+5.@Embeddable and @Embedded (used for parent child relationship)  
+6.Creating JPA Repositories & methods 
+7.@Query Annotation 
+8.Native Queries 
+9.Query Named Params //@Param()  
+10.@Transactional and @Modifying Annotation 
+11.JPA One-To-One Relationship 
+12.Cascade Types 
+13.Fetch Types 
+14.Uni & Bi directional relationship 
+15.JPA One-To-Many Relationship 
+16.JPA Many-To-One Relationship 
+17.Paging and Sorting 
+18.JPA Many-To-Many Relationship 
