@@ -18,3 +18,5 @@ JPA Topics Covered -
 16.JPA Many-To-One Relationship 
 17.Paging and Sorting 
 18.JPA Many-To-Many Relationship 
+
+![JPA](https://github.com/user-attachments/assets/1d4470b1-5fb8-4f29-b3e2-4646eb033490)
